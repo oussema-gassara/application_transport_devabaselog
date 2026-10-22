@@ -1,0 +1,6 @@
+Numero;Description;Sprint;Date_debut;Date_fin_prevue;Duree_estimee;Duree_reelle;Responsable;Statut;Difficultes;Livrable_attendu;Resultat_validation
+A1;Présentation et démonstration de Node.js;Sprint 1;22/10/2026;28/10/2026;8 heures;;Oussema Gassara;En cours;;Présentation Node.js et API de démonstration;À valider
+A2;Conception de l'architecture et des diagrammes UML;Sprint 2;À définir;À définir;12 heures;;Oussema Gassara;À faire;;Dossier UML et description de l'architecture;Non commencé
+A3;Configuration et test de la communication réseau Windows-Ubuntu;Sprint 2;À définir;À définir;8 heures;;Oussema Gassara;À faire;;Démonstration réseau et compte rendu des tests;Non commencé
+A4;Développement et validation de l'API de réservation;Sprint 3;À définir;À définir;40 heures;;Oussema Gassara;À faire;;Application fonctionnelle API documentée et tests;Non commencé
+A5;Intégration correction et présentation finale;Sprint 4;À définir;À définir;12 heures;;Oussema Gassara;À faire;;Version finale et présentation complète;Non commencé
