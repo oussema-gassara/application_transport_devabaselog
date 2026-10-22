@@ -1,0 +1,69 @@
+Travail demandé : Développement et validation d’une application de réservation selon la méthode Agile Scrum
+
+1. Objectif du travail
+
+Le projet doit être réalisé selon la méthode Agile Scrum, en organisant les tâches en plusieurs sprints. Chaque sprint doit comporter des objectifs précis, des livrables identifiés et une validation des résultats obtenus.
+
+2. Actions à réaliser
+
+Action 1 : Préparation d’une présentation sur Node.js**
+- Présenter Node.js, son fonctionnement et ses principales fonctionnalités.
+- Expliquer son rôle dans le développement de l’application.
+- Préparer une présentation synthétique.
+
+Livrable :présentation sur Node.js.
+
+Action 2 : Conception de l’architecture UML
+- Identifier les acteurs et les fonctionnalités du système.
+- Élaborer les diagrammes UML nécessaires.
+- Décrire les interactions entre le client, le serveur et le chauffeur.
+
+Livrable : dossier contenant les diagrammes UML et une description de l’architecture.
+
+Action 3 : Test de la communication réseau
+- Configurer deux ordinateurs : un client et un serveur.
+- Mettre en place l’échange de données entre les deux machines.
+- Tester et vérifier le bon fonctionnement de la communication réseau.
+
+Livrable :démonstration de la communication fonctionnelle et compte rendu des tests.
+
+Action 4 : Validation de l’application et développement de l’API
+- Déployer l’application dans un environnement commun.
+- Tester les principales fonctionnalités.
+- Développer et documenter l’API de réservation.
+- Permettre au client d’effectuer une réservation.
+- Permettre au chauffeur de consulter et de vérifier les réservations.
+
+Livrable : application fonctionnelle, API documentée et résultats des tests.
+
+Action 5 : Finalisation et présentation du projet
+- Vérifier l’intégration de tous les composants.
+- Corriger les anomalies identifiées.
+- Préparer une présentation complète du projet.
+- Présenter l’architecture, les technologies, les étapes de développement, les tests et les résultats obtenus.
+
+Livrable :version finale de l’application et présentation complète du projet.
+
+3. Organisation selon la méthode Scrum
+
+Le travail sera organisé en sprints, chacun correspondant à une période définie et à un ensemble d’objectifs à atteindre.
+
+- Sprint Planning :définir les objectifs du sprint et sélectionner les tâches à réaliser.
+- Suivi régulier :mettre à jour l’avancement des tâches et signaler les difficultés rencontrées.
+- Sprint Review : présenter les réalisations et vérifier les résultats obtenus.
+- Sprint Retrospective : identifier les difficultés et proposer des améliorations pour le sprint suivant.
+
+4. Fichier de suivi des actions
+
+Un fichier de suivi doit être créé et mis à jour tout au long du projet. Il doit contenir, pour chaque action :
+
+- Le numéro et la description de l’action.
+- Le sprint concerné.
+- La date de début et la date de fin prévue.
+- La durée estimée et la durée réellement consommée.
+- Le responsable de l’action.
+- Le statut : à faire, en cours, à valider ou terminé.
+- Les difficultés rencontrées et les remarques.
+- Le livrable attendu et le résultat de la validation.
+
+Note : chaque sprint doit se terminer par un résultat concret, testé et présenté. Toute tâche non terminée doit être réévaluée et planifiée dans le sprint suivant, si nécessaire.
