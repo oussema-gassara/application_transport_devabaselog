@@ -50,7 +50,7 @@ testée et documentée.
 
 | S1-T7 | Préparer la présentation Node.js | 3 h | À faire |
 
-| S1-T8 | Documenter le test de l'API | 30 min | À faire |
+| S1-T8 | Documenter le test de l'API | 30 min | À faire | fait
 
 | S1-T9 | Réaliser la Sprint Review | 30 min | À faire |
 
