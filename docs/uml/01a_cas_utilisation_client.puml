@@ -1,0 +1,44 @@
+@startuml
+left to right direction
+actor Client
+actor "Client à mobilité réduite" as PMR
+actor "Prestataire de paiement" as PSP
+PMR --|> Client
+rectangle "Plateforme de transport interurbain V1" {
+  usecase "Créer un compte et se connecter" as UC1
+  usecase "Rechercher un trajet direct" as UC2
+  usecase "Choisir bus ou louage" as UC3
+  usecase "Choisir une date (J à J+2)" as UC4
+  usecase "Consulter départs et places" as UC5
+  usecase "Choisir véhicule et siège" as UC6
+  usecase "Réserver un siège" as UC7
+  usecase "Payer en ligne" as UC8
+  usecase "Payer en espèces à l'embarquement" as UC9
+  usecase "Consulter billet QR" as UC10
+  usecase "Modifier / annuler réservation" as UC11
+  usecase "Consulter historique" as UC12
+  usecase "Suivre véhicule et ETA" as UC13
+  usecase "Choisir siège adapté" as UC14
+  usecase "Réduction de 6 % après validation PMR" as UC15
+}
+Client -- UC1
+Client -- UC2
+Client -- UC3
+Client -- UC4
+Client -- UC5
+Client -- UC6
+Client -- UC7
+Client -- UC8
+Client -- UC9
+Client -- UC10
+Client -- UC11
+Client -- UC12
+Client -- UC13
+PMR -- UC14
+PMR -- UC15
+PSP -- UC8
+note bottom of UC7
+Réservation sans paiement préalable <= 25 %
+de la capacité du véhicule (par départ).
+end note
+@enduml

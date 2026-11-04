@@ -1,0 +1,149 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class User {
+  +id: UUID
+  +name: string
+  +email: string
+  +phone: string
+  +passwordHash: string
+  +accountStatus: enum
+}
+class Client {
+  +clientNumber: string
+  +phoneVerified: boolean
+}
+class ClientPMR {
+  +verificationStatus: enum
+  +validatedAt: datetime
+  +discountRate: 0.06
+}
+class Driver {
+  +driverCode: string
+  +availabilityStatus: enum
+}
+class Admin {
+  +adminCode: string
+}
+class City {
+  +id: UUID
+  +name: string
+}
+class Route {
+  +id: UUID
+  +originCity: City
+  +destinationCity: City
+  +isDirect: true
+  +baseFare: decimal
+  +plannedDuration: integer
+}
+class Vehicle {
+  +id: UUID
+  +registrationNumber: string
+  +type: BUS | LOUAGE
+  +capacity: integer
+  +status: enum
+}
+class Seat {
+  +id: UUID
+  +seatNumber: string
+  +isAccessible: boolean
+}
+class Trip {
+  +id: UUID
+  +plannedDepartureAt: datetime
+  +actualDepartureAt: datetime
+  +initialETA: datetime
+  +currentETA: datetime
+  +actualArrivalAt: datetime
+  +estimatedDuration: integer
+  +actualDuration: integer
+  +status: enum
+  +boardingStatus: enum
+}
+class DriverAssignment {
+  +id: UUID
+  +isTemporary: boolean
+  +validFrom: datetime
+  +validTo: datetime
+  +approvedByAdminId: UUID?
+}
+class Reservation {
+  +id: UUID
+  +createdAt: datetime
+  +status: enum
+  +paymentMode: ONLINE | PAY_ON_SITE
+  +fareAmount: decimal
+  +discountRate: decimal
+  +discountAmount: decimal
+  +finalAmount: decimal
+  +attendanceStatus: PENDING | BOARDED | NO_SHOW
+}
+class WalkInSale {
+  +id: UUID
+  +soldAt: datetime
+  +paymentMethod: CASH
+  +amount: decimal
+  +saleStatus: enum
+}
+class Payment {
+  +id: UUID
+  +method: ONLINE | CASH
+  +status: PENDING | PAID | REFUNDED
+  +amount: decimal
+  +providerReference: string?
+  +paidAt: datetime?
+  +refundedAt: datetime?
+}
+class Ticket {
+  +id: UUID
+  +qrToken: unique string
+  +issuedAt: datetime
+  +status: VALID | BOARDED | VOID
+}
+class BoardingRecord {
+  +id: UUID
+  +scannedAt: datetime
+  +result: enum
+  +cashConfirmed: boolean
+}
+class GPSLocation {
+  +id: UUID
+  +latitude: decimal
+  +longitude: decimal
+  +accuracyMeters: decimal
+  +recordedAt: datetime
+}
+User <|-- Client
+User <|-- Driver
+User <|-- Admin
+Client <|-- ClientPMR
+City "1" <-- "0..*" Route : origin
+City "1" <-- "0..*" Route : destination
+Route "1" -- "0..*" Trip
+Vehicle "1" *-- "1..*" Seat
+Vehicle "1" -- "0..*" Trip
+Driver "1" -- "0..*" Trip
+Vehicle "1" -- "1..*" DriverAssignment
+Driver "1" -- "0..*" DriverAssignment
+Admin "0..1" -- "0..*" DriverAssignment : approves
+Admin "1" -- "0..*" ClientPMR : validates
+Client "1" -- "0..*" Reservation
+Trip "1" -- "0..*" Reservation
+Seat "1" -- "0..*" Reservation
+Trip "1" -- "0..*" WalkInSale
+Driver "1" -- "0..*" WalkInSale : records
+Reservation "1" -- "0..1" Payment
+WalkInSale "1" -- "1" Payment
+Reservation "1" -- "0..1" Ticket
+WalkInSale "1" -- "1" Ticket
+Ticket "1" -- "0..1" BoardingRecord
+Driver "1" -- "0..*" BoardingRecord : scans
+Trip "1" -- "0..*" GPSLocation
+note bottom of Reservation
+Contrainte : nombre de réservations PAY_ON_SITE <= floor(25 % de la capacité du véhicule).
+Un même siège ne peut pas être attribué deux fois pour le même départ.
+end note
+note bottom of Ticket
+Un ticket provient soit d'une réservation, soit d'une vente directe (XOR).
+end note
+@enduml

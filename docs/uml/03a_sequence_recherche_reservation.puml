@@ -1,0 +1,30 @@
+@startuml
+actor Client
+participant "Interface React" as UI
+participant "API Node / Express" as API
+database PostgreSQL as DB
+participant "Prestataire de paiement" as PSP
+Client -> UI: Saisir transport, départ, destination, date
+UI -> API: GET /trips?type&origin&destination&date
+API -> API: Valider date J à J+2 et liaison directe
+API -> DB: Rechercher départs, véhicules et sièges libres
+DB --> API: Résultats
+API --> UI: Départs et places disponibles
+Client -> UI: Choisir départ, siège et mode de paiement
+UI -> API: POST /reservations
+API -> DB: Transaction : verrouiller siège et contrôler disponibilité
+note over API,DB
+Si PAY_ON_SITE : compter les réservations sans paiement
+et imposer le plafond de 25 % de la capacité.
+end note
+alt Paiement en ligne
+  API -> PSP: Créer demande de paiement
+  PSP --> Client: Autoriser le paiement
+  PSP --> API: Notification du résultat
+  API -> DB: Enregistrer paiement PAID
+  API --> UI: Confirmer et remettre le QR Code
+else Paiement en espèces à l'embarquement
+  API -> DB: Réservation confirmée, paiement PENDING
+  API --> UI: Remettre QR Code en attente de paiement
+end
+@enduml

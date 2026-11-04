@@ -1,0 +1,26 @@
+@startuml
+actor Chauffeur
+participant "Application React" as UI
+participant "API Node / Express" as API
+database PostgreSQL as DB
+participant "Service cartographique" as Maps
+actor Client
+Chauffeur -> UI: Démarrer trajet et autoriser GPS
+UI -> API: POST /trips/{id}/start + heure réelle
+API -> DB: Enregistrer actualDepartureAt, IN_PROGRESS
+loop Pendant le trajet
+  UI -> API: Envoyer latitude, longitude, précision
+  API -> DB: Enregistrer GPSLocation horodatée
+  API -> Maps: Demander ETA actualisée
+  Maps --> API: Durée restante estimée
+  API --> Client: Publier position et ETA
+end
+Chauffeur -> UI: Terminer le trajet à l'arrivée
+UI -> API: POST /trips/{id}/finish + heure d'arrivée
+API -> DB: Enregistrer actualArrivalAt et actualDuration
+API --> Client: Afficher durée réelle
+note over API,Maps
+L'ETA dépend du fournisseur de routage et des données de trafic disponibles.
+En cas de perte réseau, afficher la dernière position connue avec son horodatage.
+end note
+@enduml

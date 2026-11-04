@@ -1,0 +1,26 @@
+@startuml
+actor Client
+participant "Application chauffeur" as DriverApp
+participant "API Node / Express" as API
+database PostgreSQL as DB
+Client -> DriverApp: Présenter QR Code
+DriverApp -> API: POST /boarding/scan (QR token)
+API -> DB: Vérifier ticket, départ, véhicule et statut
+DB --> API: Données réservation et paiement
+alt Paiement en ligne déjà confirmé
+  API --> DriverApp: Paiement confirmé
+else Paiement sur place
+  API --> DriverApp: Montant à encaisser
+  Client -> DriverApp: Remettre les espèces
+  DriverApp -> API: Confirmer l'encaissement
+  API -> DB: Enregistrer Payment=PAID, CASH
+end
+API -> DB: Enregistrer l'embarquement et le scan
+DB --> API: Confirmation d'unicité du scan
+API --> DriverApp: Billet marqué BOARDED
+note over API,DB
+Un QR invalide, déjà utilisé ou associé à un autre départ est refusé.
+Le statut NO_SHOW n'est attribué qu'après fermeture réelle de l'embarquement
+et départ du véhicule.
+end note
+@enduml

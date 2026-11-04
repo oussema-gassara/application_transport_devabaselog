@@ -12,8 +12,8 @@
 |---:|---|---|---|---:|---|
 | 1 | TECH-01 | Étudier Node.js et préparer une présentation | Must | 3 | Terminé |
 | 2 | TECH-02 | Initialiser une API Node.js avec Express | Must | 2 | Terminé |
-| 3 | TECH-03 | Tester la route `GET /api/health` | Must | 1 | Terminé |
-| 4 | TECH-04 | Concevoir les diagrammes UML du système | Must | 8 | À faire |
+| 3 | TECH-03 | Tester la route GET /api/health | Must | 1 | Terminé |
+| 4 | TECH-04 | Concevoir les diagrammes UML du système | Must | 8 | En cours |
 | 5 | TECH-05 | Installer PostgreSQL sur Ubuntu Server | Must | 5 | À faire |
 | 6 | TECH-06 | Tester la communication Windows-Ubuntu | Must | 5 | À faire |
 | 7 | US-01 | En tant que visiteur, je veux créer un compte client | Must | 5 | À faire |
