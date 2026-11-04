@@ -34,6 +34,24 @@ Ce dossier contient les sources PlantUML éditables de la première conception d
 | 03e_sequence_creation_depart.puml | Création et publication d'un départ |
 | 04_diagramme_deploiement.puml | Déploiement technique |
 
+## Aperçus visuels (SVG)
+
+Les trois diagrammes de cas d'utilisation sont également disponibles en SVG directement visualisables dans GitHub.
+
+### Client et Client PMR
+
+![Cas d'utilisation Client et Client PMR](images/01a_cas_utilisation_client.svg)
+
+### Chauffeur
+
+![Cas d'utilisation Chauffeur](images/01b_cas_utilisation_chauffeur.svg)
+
+### Administrateur
+
+![Cas d'utilisation Administrateur](images/01c_cas_utilisation_administrateur.svg)
+
+Les autres diagrammes restent disponibles sous forme de sources PlantUML dans ce dossier. Leurs aperçus visuels pourront être ajoutés après la revue des premiers diagrammes.
+
 ## Points à valider avant de figer la conception
 
 1. Choix ville uniquement ou sélection explicite des stations de départ et d'arrivée.
