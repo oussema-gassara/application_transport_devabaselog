@@ -36,7 +36,7 @@ Ce dossier contient les sources PlantUML éditables de la première conception d
 
 ## Aperçus visuels (SVG)
 
-Les trois diagrammes de cas d'utilisation sont également disponibles en SVG directement visualisables dans GitHub.
+Les dix diagrammes sont disponibles en SVG directement visualisables dans GitHub.
 
 ### Client et Client PMR
 
@@ -50,7 +50,33 @@ Les trois diagrammes de cas d'utilisation sont également disponibles en SVG dir
 
 ![Cas d'utilisation Administrateur](images/01c_cas_utilisation_administrateur.svg)
 
-Les autres diagrammes restent disponibles sous forme de sources PlantUML dans ce dossier. Leurs aperçus visuels pourront être ajoutés après la revue des premiers diagrammes.
+### Diagramme de classes
+
+![Diagramme de classes](images/02_diagramme_classes.svg)
+
+### Recherche et réservation
+
+![Recherche et réservation](images/03a_sequence_recherche_reservation.svg)
+
+### Scan QR et embarquement
+
+![Scan QR et embarquement](images/03b_sequence_scan_embarquement.svg)
+
+### Vente directe à la station
+
+![Vente directe à la station](images/03c_sequence_vente_directe_station.svg)
+
+### GPS, ETA et durée réelle
+
+![GPS, ETA et durée réelle](images/03d_sequence_gps_eta_duree.svg)
+
+### Création et publication d'un départ
+
+![Création et publication d'un départ](images/03e_sequence_creation_depart.svg)
+
+### Déploiement
+
+![Diagramme de déploiement](images/04_diagramme_deploiement.svg)
 
 ## Points à valider avant de figer la conception
 
