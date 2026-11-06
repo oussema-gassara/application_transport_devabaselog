@@ -41,8 +41,9 @@
 
 ## Avancement du Sprint 2 par groupe
 
+- Les trois groupes développent une application commune.
 - Groupes 1 et 3 : activités UML, PostgreSQL sous Linux, tests réseau, vérification de la base et connexion Node.js–PostgreSQL déclarées terminées.
-- Groupe 2 : tâches restantes à achever lors de la prochaine séance.
+- Groupe 2 : tâches restantes sur cette même application à achever lors de la prochaine séance.
 - TECH-04, TECH-05 et TECH-06 restent « En cours » au niveau global jusqu'à la clôture du groupe 2 et l'ajout des preuves.
 
 ## Évolutions futures
