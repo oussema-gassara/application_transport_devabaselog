@@ -14,8 +14,9 @@ Client -> UI: Choisir départ, siège et mode de paiement
 UI -> API: POST /reservations
 API -> DB: Transaction : verrouiller siège et contrôler disponibilité
 note over API,DB
-Si PAY_ON_SITE : compter les réservations sans paiement
-et imposer le plafond de 25 % de la capacité.
+Pour une réservation préalable avec paiement sur place (PAY_ON_SITE),
+compter les réservations non payées et appliquer le plafond de 25 %
+de la capacité par départ. Les WalkInSale ne comptent pas dans ce plafond.
 end note
 alt Paiement en ligne
   API -> PSP: Créer demande de paiement

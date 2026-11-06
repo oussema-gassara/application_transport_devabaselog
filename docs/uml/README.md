@@ -9,9 +9,9 @@ Ce dossier contient les sources PlantUML éditables de la première conception d
 - Recherche par type de transport, ville de départ, destination et date.
 - Réservation possible aujourd'hui et jusqu'à J+2.
 - Choix du siège pour les bus et les louages.
-- Plafond de réservations sans paiement préalable : 25 % de la capacité, par départ.
+- Plafond de 25 % de la capacité par départ pour les réservations faites à l'avance avec paiement à l'embarquement (PAY_ON_SITE).
 - Paiement en ligne ou en espèces à l'embarquement.
-- Achat direct en espèces à la station, enregistré comme vente distincte.
+- Achat direct en espèces à la station, enregistré comme vente distincte ; sans plafond de 25 %, sous réserve des sièges disponibles.
 - Client PMR : statut vérifié par l'administrateur et réduction de 6 % après validation.
 - Chauffeur : contrôle QR, confirmation des espèces, gestion de l'embarquement et transmission GPS.
 - Administrateur : crée et publie les départs ; le chauffeur peut proposer un départ soumis à approbation.
@@ -69,8 +69,8 @@ Les autres diagrammes restent disponibles sous forme de sources PlantUML dans ce
 
 ## Hypothèses techniques importantes
 
-- La limite de 25 % s'applique aux réservations PAY_ON_SITE, par départ.
-- Une vente directe à la station n'est pas une réservation préalable (WalkInSale) ; elle partage le même inventaire de sièges.
+- La limite de 25 % s'applique uniquement aux réservations préalables PAY_ON_SITE, par départ ; les ventes directes ne sont pas comptées dans ce plafond.
+- Une vente directe à la station (WalkInSale) n'est pas une réservation préalable : elle n'a pas de quota de 25 % et utilise un siège encore disponible dans l'inventaire commun.
 - Les statuts de réservation, de paiement et d'embarquement sont distincts.
 - Le QR Code est un jeton unique, vérifié côté serveur et utilisable une seule fois.
 - Un siège ne peut pas être attribué deux fois pour un même départ.

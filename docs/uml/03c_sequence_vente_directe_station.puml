@@ -14,8 +14,9 @@ API -> DB: Attribuer le siège dans une transaction
 API --> Chauffeur: Générer Ticket et QR Code
 Chauffeur --> Passager: Présenter/remettre le QR Code
 note over Chauffeur,DB
-Une vente directe n'est pas une réservation préalable.
-Elle partage le même inventaire de sièges pour éviter les doublons.
+Une vente directe sans réservation préalable n'est pas soumise au plafond de 25 %.
+Elle est autorisée tant qu'un siège reste disponible et partage
+le même inventaire pour éviter les doublons.
 Le mode de remise du QR reste à définir.
 end note
 @enduml

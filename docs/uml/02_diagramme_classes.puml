@@ -140,8 +140,12 @@ Ticket "1" -- "0..1" BoardingRecord
 Driver "1" -- "0..*" BoardingRecord : scans
 Trip "1" -- "0..*" GPSLocation
 note bottom of Reservation
-Contrainte : nombre de réservations PAY_ON_SITE <= floor(25 % de la capacité du véhicule).
+Contrainte : seules les réservations préalables avec paiement sur place (PAY_ON_SITE) sont plafonnées à floor(25 % de la capacité du véhicule), par départ.
 Un même siège ne peut pas être attribué deux fois pour le même départ.
+end note
+note bottom of WalkInSale
+Une vente directe sans réservation n'est pas soumise au plafond de 25 %.
+Elle est possible tant qu'un siège reste disponible sur le départ.
 end note
 note bottom of Ticket
 Un ticket provient soit d'une réservation, soit d'une vente directe (XOR).
