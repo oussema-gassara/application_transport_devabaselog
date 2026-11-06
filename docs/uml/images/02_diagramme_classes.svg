@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2220" height="1690" viewBox="0 0 2220 1690">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
+<marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2563eb"/></marker>
+<style>text{font-family:Arial,DejaVu Sans,sans-serif}.title{font-size:32px;font-weight:700;fill:#0f172a}.subtitle{font-size:17px;fill:#64748b}</style>
+</defs>
+<rect width="2220" height="1690" fill="#f8fafc"/>
+<rect x="36" y="28" width="156" height="27" rx="13" fill="#fffbeb" stroke="#f59e0b"/>
+<text x="114" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">PROPOSITION À VALIDER</text>
+<text x="38" y="99" class="title">Diagramme de classes</text>
+<text x="40" y="128" class="subtitle">Plateforme de transport interurbain V1 · classes et attributs de la source PlantUML</text>
+<rect x="35" y="155" width="495" height="875" rx="18" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.4"/>
+<text x="53" y="186" font-size="18" fill="#334155" font-weight="700" text-anchor="start">Identité et rôles</text>
+<rect x="550" y="155" width="735" height="875" rx="18" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.4"/>
+<text x="568" y="186" font-size="18" fill="#334155" font-weight="700" text-anchor="start">Réseau et exploitation</text>
+<rect x="1305" y="155" width="875" height="875" rx="18" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.4"/>
+<text x="1323" y="186" font-size="18" fill="#334155" font-weight="700" text-anchor="start">Réservation et contrôle</text>
+<rect x="70" y="215" width="205" height="145" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="71" y="216" width="203" height="37" rx="9" fill="#7c3aed" opacity=".12"/>
+<rect x="71" y="243" width="203" height="10" fill="#7c3aed" opacity=".12"/>
+<text x="84" y="240" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">«abstract» User</text>
+<text x="84" y="267" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">id: UUID</text>
+<text x="84" y="289" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">name, email, phone</text>
+<text x="84" y="311" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">passwordHash: string</text>
+<text x="84" y="333" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">accountStatus: enum</text>
+<rect x="300" y="215" width="195" height="100" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="301" y="216" width="193" height="37" rx="9" fill="#7c3aed" opacity=".12"/>
+<rect x="301" y="243" width="193" height="10" fill="#7c3aed" opacity=".12"/>
+<text x="314" y="240" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Client</text>
+<text x="314" y="267" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">clientNumber: string</text>
+<text x="314" y="289" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">phoneVerified: boolean</text>
+<rect x="300" y="350" width="195" height="120" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="301" y="351" width="193" height="37" rx="9" fill="#7c3aed" opacity=".12"/>
+<rect x="301" y="378" width="193" height="10" fill="#7c3aed" opacity=".12"/>
+<text x="314" y="375" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">ClientPMR</text>
+<text x="314" y="402" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">verificationStatus</text>
+<text x="314" y="424" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">validatedAt: datetime</text>
+<text x="314" y="446" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">discountRate: 0.06</text>
+<rect x="70" y="420" width="205" height="100" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="71" y="421" width="203" height="37" rx="9" fill="#7c3aed" opacity=".12"/>
+<rect x="71" y="448" width="203" height="10" fill="#7c3aed" opacity=".12"/>
+<text x="84" y="445" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Driver</text>
+<text x="84" y="472" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">driverCode: string</text>
+<text x="84" y="494" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">availabilityStatus</text>
+<rect x="70" y="555" width="205" height="80" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="71" y="556" width="203" height="37" rx="9" fill="#7c3aed" opacity=".12"/>
+<rect x="71" y="583" width="203" height="10" fill="#7c3aed" opacity=".12"/>
+<text x="84" y="580" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Admin</text>
+<text x="84" y="607" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">adminCode: string</text>
+<rect x="70" y="675" width="205" height="90" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="71" y="676" width="203" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="71" y="703" width="203" height="10" fill="#2563eb" opacity=".12"/>
+<text x="84" y="700" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">City</text>
+<text x="84" y="727" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">id: UUID</text>
+<text x="84" y="749" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">name: string</text>
+<rect x="300" y="675" width="195" height="120" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="301" y="676" width="193" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="301" y="703" width="193" height="10" fill="#2563eb" opacity=".12"/>
+<text x="314" y="700" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">GPSLocation</text>
+<text x="314" y="727" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">latitude, longitude</text>
+<text x="314" y="749" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">accuracyMeters</text>
+<text x="314" y="771" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">recordedAt: datetime</text>
+<rect x="585" y="215" width="300" height="155" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="586" y="216" width="298" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="586" y="243" width="298" height="10" fill="#2563eb" opacity=".12"/>
+<text x="599" y="240" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Route</text>
+<text x="599" y="267" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">originCity: City</text>
+<text x="599" y="289" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">destinationCity: City</text>
+<text x="599" y="311" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">isDirect: true</text>
+<text x="599" y="333" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">baseFare: decimal</text>
+<text x="599" y="355" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">plannedDuration: integer</text>
+<rect x="915" y="215" width="315" height="135" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="916" y="216" width="313" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="916" y="243" width="313" height="10" fill="#2563eb" opacity=".12"/>
+<text x="929" y="240" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Vehicle</text>
+<text x="929" y="267" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">registrationNumber</text>
+<text x="929" y="289" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">type: BUS | LOUAGE</text>
+<text x="929" y="311" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">capacity: integer</text>
+<text x="929" y="333" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">status: enum</text>
+<rect x="585" y="405" width="300" height="155" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="586" y="406" width="298" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="586" y="433" width="298" height="10" fill="#2563eb" opacity=".12"/>
+<text x="599" y="430" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Trip</text>
+<text x="599" y="457" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">planned / actual departure</text>
+<text x="599" y="479" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">initialETA / currentETA</text>
+<text x="599" y="501" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">actualArrivalAt</text>
+<text x="599" y="523" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">estimated / actual duration</text>
+<text x="599" y="545" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">status, boardingStatus</text>
+<rect x="915" y="405" width="315" height="110" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="916" y="406" width="313" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="916" y="433" width="313" height="10" fill="#2563eb" opacity=".12"/>
+<text x="929" y="430" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Seat</text>
+<text x="929" y="457" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">id: UUID</text>
+<text x="929" y="479" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">seatNumber: string</text>
+<text x="929" y="501" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">isAccessible: boolean</text>
+<rect x="585" y="600" width="300" height="135" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="586" y="601" width="298" height="37" rx="9" fill="#2563eb" opacity=".12"/>
+<rect x="586" y="628" width="298" height="10" fill="#2563eb" opacity=".12"/>
+<text x="599" y="625" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">DriverAssignment</text>
+<text x="599" y="652" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">id: UUID</text>
+<text x="599" y="674" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">isTemporary: boolean</text>
+<text x="599" y="696" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">validFrom / validTo</text>
+<text x="599" y="718" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">approvedByAdminId?</text>
+<rect x="1340" y="215" width="365" height="135" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="1341" y="216" width="363" height="37" rx="9" fill="#0f766e" opacity=".12"/>
+<rect x="1341" y="243" width="363" height="10" fill="#0f766e" opacity=".12"/>
+<text x="1354" y="240" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Reservation</text>
+<text x="1354" y="267" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">id, createdAt, status</text>
+<text x="1354" y="289" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">paymentMode: ONLINE | PAY_ON_SITE</text>
+<text x="1354" y="311" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">fare / discount / final amount</text>
+<text x="1354" y="333" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">attendanceStatus</text>
+<rect x="1340" y="395" width="365" height="125" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="1341" y="396" width="363" height="37" rx="9" fill="#0f766e" opacity=".12"/>
+<rect x="1341" y="423" width="363" height="10" fill="#0f766e" opacity=".12"/>
+<text x="1354" y="420" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">WalkInSale</text>
+<text x="1354" y="447" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">id, soldAt</text>
+<text x="1354" y="469" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">paymentMethod: CASH</text>
+<text x="1354" y="491" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">amount: decimal</text>
+<text x="1354" y="513" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">saleStatus: enum</text>
+<rect x="1340" y="565" width="365" height="135" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="1341" y="566" width="363" height="37" rx="9" fill="#0f766e" opacity=".12"/>
+<rect x="1341" y="593" width="363" height="10" fill="#0f766e" opacity=".12"/>
+<text x="1354" y="590" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Payment</text>
+<text x="1354" y="617" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">method: ONLINE | CASH</text>
+<text x="1354" y="639" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">status: PENDING | PAID | REFUNDED</text>
+<text x="1354" y="661" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">amount, providerReference?</text>
+<text x="1354" y="683" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">paidAt?, refundedAt?</text>
+<rect x="1740" y="215" width="395" height="110" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="1741" y="216" width="393" height="37" rx="9" fill="#0f766e" opacity=".12"/>
+<rect x="1741" y="243" width="393" height="10" fill="#0f766e" opacity=".12"/>
+<text x="1754" y="240" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">Ticket</text>
+<text x="1754" y="267" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">qrToken: unique string</text>
+<text x="1754" y="289" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">issuedAt: datetime</text>
+<text x="1754" y="311" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">status: VALID | BOARDED | VOID</text>
+<rect x="1740" y="395" width="395" height="110" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="1.3"/>
+<rect x="1741" y="396" width="393" height="37" rx="9" fill="#0f766e" opacity=".12"/>
+<rect x="1741" y="423" width="393" height="10" fill="#0f766e" opacity=".12"/>
+<text x="1754" y="420" font-size="16" fill="#0f172a" font-weight="700" text-anchor="start">BoardingRecord</text>
+<text x="1754" y="447" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">scannedAt: datetime</text>
+<text x="1754" y="469" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">result: enum</text>
+<text x="1754" y="491" font-size="13" fill="#1e293b" font-weight="400" text-anchor="start">cashConfirmed: boolean</text>
+<rect x="35" y="1060" width="2145" height="500" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="53" y="1091" font-size="18" fill="#334155" font-weight="700" text-anchor="start">Associations et contraintes UML</text>
+<text x="65" y="1115" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Héritage · exploitation</text>
+<text x="65" y="1150" font-size="15" fill="#1e293b" font-weight="400" text-anchor="start"><tspan x="65" dy="0">User &lt;|-- Client, Driver, Admin; Client &lt;|-- ClientPMR</tspan><tspan x="65" dy="47">City 1 — 0..* Route (origine et destination)</tspan><tspan x="65" dy="47">Route 1 — 0..* Trip; Vehicle 1 *-- 1..* Seat</tspan><tspan x="65" dy="47">Vehicle / Driver — Trip; Vehicle / Driver — DriverAssignment</tspan><tspan x="65" dy="47">Admin valide les affectations temporaires et le statut PMR</tspan><tspan x="65" dy="47">Trip 1 — 0..* GPSLocation</tspan></text>
+<text x="770" y="1115" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Réservation · vente</text>
+<text x="770" y="1150" font-size="15" fill="#1e293b" font-weight="400" text-anchor="start"><tspan x="770" dy="0">Client 1 — 0..* Reservation; Trip 1 — 0..* Reservation</tspan><tspan x="770" dy="47">Seat 1 — 0..* Reservation; Trip 1 — 0..* WalkInSale</tspan><tspan x="770" dy="47">Driver enregistre WalkInSale et scanne BoardingRecord</tspan><tspan x="770" dy="47">Reservation 1 — 0..1 Payment / Ticket</tspan><tspan x="770" dy="47">WalkInSale 1 — 1 Payment / Ticket</tspan><tspan x="770" dy="47">Ticket 1 — 0..1 BoardingRecord</tspan></text>
+<text x="1480" y="1115" font-size="18" fill="#0f172a" font-weight="700" text-anchor="start">Règles métier représentées</text>
+<text x="1480" y="1150" font-size="15" fill="#1e293b" font-weight="400" text-anchor="start"><tspan x="1480" dy="0">Plafond 25 % : réservation préalable avec paiement sur place</tspan><tspan x="1480" dy="47">Vente directe : aucun plafond si des sièges sont libres</tspan><tspan x="1480" dy="47">Un siège ne peut pas être attribué deux fois par départ</tspan><tspan x="1480" dy="47">Un ticket vient d’une réservation OU d’une vente directe (XOR)</tspan><tspan x="1480" dy="47">Paiement, réservation et embarquement ont des statuts distincts</tspan><tspan x="1480" dy="47">Cardinalités reprises de la source PlantUML</tspan></text>
+<text x="42" y="1634" font-size="15" fill="#64748b" font-weight="400" text-anchor="start">Version de travail : les choix métier du README restent à confirmer avec l’équipe.</text>
+</svg>

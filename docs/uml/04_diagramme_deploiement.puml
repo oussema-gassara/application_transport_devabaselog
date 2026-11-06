@@ -1,0 +1,23 @@
+@startuml
+node "Terminaux utilisateurs" {
+  artifact "Navigateur client\nReact responsive" as ClientWeb
+  node "Téléphone chauffeur" {
+    artifact "React responsive\nCaméra QR + GPS" as DriverApp
+  }
+  artifact "Navigateur administrateur\nReact responsive" as AdminWeb
+}
+node "Windows Server" {
+  component "Node.js + Express.js" as API
+  component "API REST / HTTPS\nJWT / CORS / Logging" as Services
+  API -- Services
+}
+database "Ubuntu Server\nPostgreSQL" as DB
+cloud "Prestataire de paiement" as PSP
+cloud "Service cartographique / routage" as Maps
+ClientWeb --> API : HTTPS
+DriverApp --> API : HTTPS + GPS
+AdminWeb --> API : HTTPS
+API --> DB : Réseau privé / VPN / TLS
+API --> PSP : HTTPS — paiement en ligne
+API --> Maps : HTTPS — itinéraire / ETA
+@enduml

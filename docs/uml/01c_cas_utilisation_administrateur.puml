@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Administrateur
+rectangle "Espace administrateur — V1" {
+  usecase "Gérer villes et liaisons directes" as U1
+  usecase "Gérer véhicules, capacités et sièges" as U2
+  usecase "Gérer comptes et rôles" as U3
+  usecase "Affecter chauffeur à véhicule" as U4
+  usecase "Affecter un remplaçant temporaire" as U5
+  usecase "Créer, modifier et publier départs" as U6
+  usecase "Valider les propositions chauffeur" as U7
+  usecase "Vérifier le statut PMR" as U8
+  usecase "Consulter réservations, paiements et ventes" as U9
+  usecase "Gérer annulations et remboursements" as U10
+  usecase "Consulter les statistiques" as U11
+}
+Administrateur -- U1
+Administrateur -- U2
+Administrateur -- U3
+Administrateur -- U4
+Administrateur -- U5
+Administrateur -- U6
+Administrateur -- U7
+Administrateur -- U8
+Administrateur -- U9
+Administrateur -- U10
+Administrateur -- U11
+@enduml

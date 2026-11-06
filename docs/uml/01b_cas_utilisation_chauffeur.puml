@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor Chauffeur
+rectangle "Espace chauffeur — V1" {
+  usecase "Consulter les départs affectés" as U1
+  usecase "Déclarer sa disponibilité" as U2
+  usecase "Proposer un départ" as U3
+  usecase "Enregistrer une vente directe" as U4
+  usecase "Scanner un QR Code" as U5
+  usecase "Confirmer l'encaissement espèces" as U6
+  usecase "Ouvrir / fermer l'embarquement" as U7
+  usecase "Démarrer / terminer un trajet" as U8
+  usecase "Transmettre le GPS" as U9
+  usecase "Signaler retard ou panne" as U10
+}
+Chauffeur -- U1
+Chauffeur -- U2
+Chauffeur -- U3
+Chauffeur -- U4
+Chauffeur -- U5
+Chauffeur -- U6
+Chauffeur -- U7
+Chauffeur -- U8
+Chauffeur -- U9
+Chauffeur -- U10
+note bottom of U3
+Une proposition de départ doit être approuvée
+et publiée par l'administrateur.
+end note
+@enduml

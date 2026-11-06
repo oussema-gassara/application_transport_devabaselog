@@ -1,0 +1,22 @@
+@startuml
+actor Passager
+participant Chauffeur
+participant "API Node / Express" as API
+database PostgreSQL as DB
+Passager -> Chauffeur: Demander un billet sans réservation préalable
+Chauffeur -> API: Sélectionner départ et siège
+API -> DB: Vérifier départ ouvert, siège libre et capacité
+DB --> API: Siège disponible
+Passager -> Chauffeur: Payer en espèces
+Chauffeur -> API: Confirmer réception des espèces
+API -> DB: Créer WalkInSale et Payment=PAID
+API -> DB: Attribuer le siège dans une transaction
+API --> Chauffeur: Générer Ticket et QR Code
+Chauffeur --> Passager: Présenter/remettre le QR Code
+note over Chauffeur,DB
+Une vente directe sans réservation préalable n'est pas soumise au plafond de 25 %.
+Elle est autorisée tant qu'un siège reste disponible et partage
+le même inventaire pour éviter les doublons.
+Le mode de remise du QR reste à définir.
+end note
+@enduml

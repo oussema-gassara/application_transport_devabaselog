@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1314" viewBox="0 0 1160 1314">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
+<marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2563eb"/></marker>
+<style>text{font-family:Arial,DejaVu Sans,sans-serif}.title{font-size:32px;font-weight:700;fill:#0f172a}.subtitle{font-size:17px;fill:#64748b}</style>
+</defs>
+<rect width="1160" height="1314" fill="#f8fafc"/>
+<rect x="36" y="28" width="156" height="27" rx="13" fill="#fffbeb" stroke="#f59e0b"/>
+<text x="114" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">PROPOSITION À VALIDER</text>
+<text x="38" y="99" class="title">Séquence · scan QR et embarquement</text>
+<text x="40" y="128" class="subtitle">Vérification du billet, encaissement éventuel et enregistrement du scan</text>
+<rect x="102" y="523" width="956" height="87" rx="12" fill="#eff6ff" stroke="#cbd5e1" stroke-width="1.1"/>
+<text x="114" y="543" font-size="13" fill="#475569" font-weight="700" text-anchor="start">ALT · paiement en ligne</text>
+<rect x="102" y="590" width="956" height="288" rx="12" fill="#f0fdfa" stroke="#cbd5e1" stroke-width="1.1"/>
+<text x="114" y="610" font-size="13" fill="#475569" font-weight="700" text-anchor="start">ALT · paiement sur place</text>
+<rect x="122.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="212.5" y="215" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="212.5" dy="0">Client</tspan></text>
+<line x1="212.5" y1="238" x2="212.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="367.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="457.5" y="198" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="457.5" dy="0">Application</tspan><tspan x="457.5" dy="18">chauffeur</tspan></text>
+<line x1="457.5" y1="238" x2="457.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="612.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="702.5" y="198" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="702.5" dy="0">API Node /</tspan><tspan x="702.5" dy="18">Express</tspan></text>
+<line x1="702.5" y1="238" x2="702.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="857.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="947.5" y="215" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="947.5" dy="0">PostgreSQL</tspan></text>
+<line x1="947.5" y1="238" x2="947.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<line x1="212.5" y1="275" x2="457.5" y2="275" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="208.0" y="253" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="335.0" y="268" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Présenter le QR Code</text>
+<line x1="457.5" y1="342" x2="702.5" y2="342" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="453.0" y="320" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="335" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">POST /boarding/scan (QR token)</text>
+<line x1="702.5" y1="409" x2="947.5" y2="409" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="698.0" y="387" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="402" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Vérifier billet, départ, véhicule, statut</text>
+<line x1="947.5" y1="476" x2="702.5" y2="476" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="698.0" y="454" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="469" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Renvoyer réservation et paiement</text>
+<line x1="702.5" y1="543" x2="457.5" y2="543" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="453.0" y="521" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="536" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Paiement en ligne confirmé</text>
+<line x1="702.5" y1="610" x2="457.5" y2="610" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="453.0" y="588" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="603" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Sinon : montant à encaisser</text>
+<line x1="212.5" y1="677" x2="457.5" y2="677" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="208.0" y="655" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="335.0" y="670" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Remettre les espèces</text>
+<line x1="457.5" y1="744" x2="702.5" y2="744" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="453.0" y="722" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="737" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Confirmer l’encaissement</text>
+<line x1="702.5" y1="811" x2="947.5" y2="811" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="698.0" y="789" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="804" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Enregistrer Payment=PAID, CASH</text>
+<line x1="702.5" y1="878" x2="947.5" y2="878" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="698.0" y="856" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="871" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Enregistrer embarquement et scan</text>
+<line x1="947.5" y1="945" x2="702.5" y2="945" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="698.0" y="923" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="938" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Confirmer unicité du scan</text>
+<line x1="702.5" y1="1012" x2="457.5" y2="1012" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="453.0" y="990" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="1005" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Billet marqué BOARDED</text>
+<rect x="105" y="1094" width="950" height="150" rx="12" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2"/>
+<text x="124" y="1121" font-size="14" fill="#b45309" font-weight="700" text-anchor="start">Règles / décisions à confirmer</text>
+<text x="124" y="1148" font-size="14" fill="#1e293b" font-weight="400" text-anchor="start"><tspan x="124" dy="0">Un QR invalide, déjà utilisé ou lié à un autre départ est refusé.</tspan><tspan x="124" dy="22">NO_SHOW après fermeture de l’embarquement et départ du véhicule.</tspan></text>
+<text x="40" y="1294" font-size="13" fill="#64748b" font-weight="400" text-anchor="start">Flux fonctionnel issu de la source PlantUML · proposition de conception</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1650" height="1314" viewBox="0 0 1650 1314">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
+<marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2563eb"/></marker>
+<style>text{font-family:Arial,DejaVu Sans,sans-serif}.title{font-size:32px;font-weight:700;fill:#0f172a}.subtitle{font-size:17px;fill:#64748b}</style>
+</defs>
+<rect width="1650" height="1314" fill="#f8fafc"/>
+<rect x="36" y="28" width="156" height="27" rx="13" fill="#fffbeb" stroke="#f59e0b"/>
+<text x="114" y="47" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">PROPOSITION À VALIDER</text>
+<text x="38" y="99" class="title">Séquence · GPS, ETA et durée réelle</text>
+<text x="40" y="128" class="subtitle">Position transmise pendant le trajet, ETA mise à jour</text>
+<rect x="102" y="456" width="1446" height="355" rx="12" fill="#eff6ff" stroke="#cbd5e1" stroke-width="1.1"/>
+<text x="114" y="476" font-size="13" fill="#475569" font-weight="700" text-anchor="start">LOOP · pendant le trajet</text>
+<rect x="122.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="212.5" y="215" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="212.5" dy="0">Chauffeur</tspan></text>
+<line x1="212.5" y1="238" x2="212.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="367.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="457.5" y="198" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="457.5" dy="0">Application</tspan><tspan x="457.5" dy="18">React</tspan></text>
+<line x1="457.5" y1="238" x2="457.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="612.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="702.5" y="198" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="702.5" dy="0">API Node /</tspan><tspan x="702.5" dy="18">Express</tspan></text>
+<line x1="702.5" y1="238" x2="702.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="857.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="947.5" y="215" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="947.5" dy="0">PostgreSQL</tspan></text>
+<line x1="947.5" y1="238" x2="947.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="1102.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="1192.5" y="198" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="1192.5" dy="0">Service</tspan><tspan x="1192.5" dy="18">cartographique</tspan></text>
+<line x1="1192.5" y1="238" x2="1192.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<rect x="1347.5" y="180" width="180" height="58" rx="12" fill="#fff" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="1437.5" y="215" font-size="14" fill="#0f172a" font-weight="700" text-anchor="middle"><tspan x="1437.5" dy="0">Client</tspan></text>
+<line x1="1437.5" y1="238" x2="1437.5" y2="1069" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="7 7"/>
+<line x1="212.5" y1="275" x2="457.5" y2="275" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="208.0" y="253" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="335.0" y="268" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Démarrer trajet et autoriser GPS</text>
+<line x1="457.5" y1="342" x2="702.5" y2="342" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="453.0" y="320" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="335" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">POST /trips/{id}/start</text>
+<line x1="702.5" y1="409" x2="947.5" y2="409" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="698.0" y="387" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="402" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Enregistrer heure réelle + IN_PROGRESS</text>
+<line x1="457.5" y1="476" x2="702.5" y2="476" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="453.0" y="454" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="469" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Envoyer latitude, longitude, précision</text>
+<line x1="702.5" y1="543" x2="947.5" y2="543" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="698.0" y="521" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="536" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Enregistrer position horodatée</text>
+<line x1="702.5" y1="610" x2="1192.5" y2="610" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="820.5" y="588" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="947.5" y="603" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Demander ETA actualisée</text>
+<line x1="1192.5" y1="677" x2="702.5" y2="677" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="820.5" y="655" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="947.5" y="670" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Retourner durée restante</text>
+<line x1="702.5" y1="744" x2="1437.5" y2="744" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="943.0" y="722" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="1070.0" y="737" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Publier position et ETA</text>
+<line x1="212.5" y1="811" x2="457.5" y2="811" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="208.0" y="789" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="335.0" y="804" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Terminer le trajet à l’arrivée</text>
+<line x1="457.5" y1="878" x2="702.5" y2="878" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="453.0" y="856" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="580.0" y="871" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">POST /trips/{id}/finish</text>
+<line x1="702.5" y1="945" x2="947.5" y2="945" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+<rect x="698.0" y="923" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="825.0" y="938" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Enregistrer heure d’arrivée + durée réelle</text>
+<line x1="702.5" y1="1012" x2="1437.5" y2="1012" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="943.0" y="990" width="254" height="20" rx="7" fill="#f8fafc" opacity=".96"/>
+<text x="1070.0" y="1005" font-size="13" fill="#1e293b" font-weight="500" text-anchor="middle">Afficher la durée réelle</text>
+<rect x="105" y="1094" width="1440" height="150" rx="12" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2"/>
+<text x="124" y="1121" font-size="14" fill="#b45309" font-weight="700" text-anchor="start">Règles / décisions à confirmer</text>
+<text x="124" y="1148" font-size="14" fill="#1e293b" font-weight="400" text-anchor="start"><tspan x="124" dy="0">Le fournisseur cartographique et la fréquence GPS restent à choisir.</tspan><tspan x="124" dy="22">En perte réseau, afficher la dernière position avec son horodatage.</tspan></text>
+<text x="40" y="1294" font-size="13" fill="#64748b" font-weight="400" text-anchor="start">Flux fonctionnel issu de la source PlantUML · proposition de conception</text>
+</svg>

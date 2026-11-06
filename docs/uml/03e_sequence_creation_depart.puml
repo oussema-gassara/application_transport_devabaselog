@@ -1,0 +1,25 @@
+@startuml
+actor Administrateur
+actor Chauffeur
+participant "Interface React" as UI
+participant "API Node / Express" as API
+database PostgreSQL as DB
+Administrateur -> UI: Créer départ (route, horaire, véhicule, chauffeur)
+UI -> API: POST /trips
+API -> DB: Vérifier disponibilité chauffeur / véhicule et chevauchements
+DB --> API: Validation
+API -> DB: Enregistrer départ DRAFT
+Chauffeur -> UI: Proposer un départ supplémentaire
+UI -> API: POST /trip-proposals
+API -> DB: Enregistrer proposition PENDING_REVIEW
+API --> Administrateur: Notifier proposition
+Administrateur -> UI: Accepter ou refuser
+UI -> API: PATCH /trip-proposals/{id}/decision
+API -> DB: Valider affectations et publier si accepté
+API --> UI: Résultat de validation
+note over Administrateur,DB
+L'administrateur publie les départs. Le chauffeur peut proposer un départ.
+Chaque véhicule conserve son chauffeur attitré, sauf remplacement temporaire
+validé par l'administrateur et conservé dans l'historique.
+end note
+@enduml
