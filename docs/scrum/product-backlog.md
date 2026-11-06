@@ -14,8 +14,8 @@
 | 2 | TECH-02 | Initialiser une API Node.js avec Express | Must | 2 | Terminé |
 | 3 | TECH-03 | Tester la route GET /api/health | Must | 1 | Terminé |
 | 4 | TECH-04 | Concevoir les diagrammes UML du système | Must | 8 | En cours |
-| 5 | TECH-05 | Installer PostgreSQL sur Ubuntu Server | Must | 5 | À faire |
-| 6 | TECH-06 | Tester la communication Windows-Ubuntu | Must | 5 | À faire |
+| 5 | TECH-05 | Installer PostgreSQL sur Ubuntu Server | Must | 5 | En cours |
+| 6 | TECH-06 | Tester la communication Windows-Ubuntu | Must | 5 | En cours |
 | 7 | US-01 | En tant que visiteur, je veux créer un compte client | Must | 5 | À faire |
 | 8 | US-02 | En tant qu'utilisateur, je veux me connecter de manière sécurisée | Must | 5 | À faire |
 | 9 | US-03 | En tant qu'administrateur, je veux gérer les utilisateurs et leurs rôles | Must | 5 | À faire |
@@ -38,6 +38,12 @@
 | 26 | TECH-10 | Préparer le déploiement et la documentation finale | Must | 8 | À faire |
 | 27 | US-17 | En tant que client, je veux suivre la position du véhicule | Could | 13 | À faire |
 | 28 | US-18 | En tant que client, je veux payer en ligne | Could | 13 | À faire |
+
+## Avancement du Sprint 2 par groupe
+
+- Groupes 1 et 3 : activités UML, PostgreSQL sous Linux, tests réseau, vérification de la base et connexion Node.js–PostgreSQL déclarées terminées.
+- Groupe 2 : tâches restantes à achever lors de la prochaine séance.
+- TECH-04, TECH-05 et TECH-06 restent « En cours » au niveau global jusqu'à la clôture du groupe 2 et l'ajout des preuves.
 
 ## Évolutions futures
 
