@@ -6,7 +6,7 @@
 - Branche de travail : sprint-2-uml
 - Branche cible : main
 - Période : à renseigner
-- Statut global : En cours. Les trois groupes développent ensemble la même application; les groupes 1 et 3 ont finalisé leurs activités prévues, le groupe 2 poursuit les tâches restantes.
+- Statut global : En cours. La classe est répartie en trois groupes; chacun réalise l'application demandée selon son calendrier. Les groupes 1 et 3 ont finalisé leurs activités prévues, le groupe 2 poursuit les tâches restantes.
 
 ## 2. Objectif du sprint
 
@@ -47,7 +47,7 @@ Les sources, aperçus et points encore ouverts sont recensés dans docs/uml/READ
 
 ## 5. Bilan des activités par groupe
 
-Les groupes 1, 2 et 3 contribuent à la même application. Ce bilan décrit l'avancement de chacun sur le projet commun, et non trois applications distinctes.
+La classe est répartie en trois groupes, et chaque groupe réalise l'application dans le cadre de son propre travail. Les groupes suivent la même consigne; seule la répartition du temps des activités varie. Ce bilan présente leur progression respective.
 
 ### Groupes 1 et 3 — activités terminées selon le bilan de sprint
 
